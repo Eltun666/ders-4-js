@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+header .Publishing {
+  --bs-gutter-x: 0 !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.112);
+}
+header .Publishing .logobox {
+  display: flex;
+  gap: 5px;
+}
+header .Publishing .logobox .box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  color: #4d4d4d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .Publishing .logobox .box i {
+  font-size: 15px;
+}
+header .Publishing .logobox .box:hover {
+  background-color: #95adbe;
+  color: white;
+}
+header .Publishing .logotext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .Publishing .logotext a {
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-family: "Lora", serif;
+  margin-bottom: 0;
+}
+header .Publishing .logotext a span {
+  color: #ff7a5c;
+}
+header .Publishing .logotext a small {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+}
+header .Publishing .headsearc {
+  display: flex;
+  justify-content: end;
+}
+header .Publishing .headsearc form {
+  display: flex;
+}
+header .Publishing .headsearc form input {
+  border: none;
+  background: rgba(0, 0, 0, 0.09);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  padding: 6px 12px 6px 16px;
+  height: 52px;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  width: 250px;
+}
+header .Publishing .headsearc form button {
+  background: #95adbe;
+  width: 50px;
+  border-radius: 0 50px 50px 0;
+  border: none;
+}
+header .Publishing .headsearc form button i {
+  color: white;
+  font-size: 16px;
+}
+header .container .navlogo {
+  font-size: 24px;
+  display: none;
+}
+header .container nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+header .container nav ul li {
+  padding: 1.5rem 0 0;
+  cursor: pointer;
+}
+header .container nav ul li a {
+  padding: 0 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: "Lora", serif;
+  transition: 0.3s;
+}
+header .container nav ul li .home {
+  color: #95adbe;
+}
+header .container nav ul li:hover a {
+  color: #95adbe;
+}
+header .container nav ul li .hoverbox {
+  width: 100%;
+  height: 3px;
+  margin-top: 25px;
+  position: relative;
+  transition: color 0.4s linear;
+  border: none;
+}
+header .container nav ul li .hoverbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #95adbe;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+header .container nav ul li:hover .hoverbox::before {
+  transform: scaleX(1);
+}
+
+main section {
+  position: relative;
+  height: 700px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(https://preview.colorlib.com/theme/publishingcompany/images/bg_1.jpg.webp);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+}
+main section .text {
+  width: 70%;
+}
+main section .text h1 {
+  width: 70%;
+  font-size: 60px;
+  color: #000000;
+  line-height: 1.1;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Lora", serif;
+}
+main section .text p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+main section .text .btnblue {
+  background-color: #95adbe;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+main section .text .btnwhite {
+  color: #000000;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+}
+main section .container {
+  position: absolute;
+  bottom: -225px;
+}
+main section .container .row .col-xl-3 {
+  text-align: center;
+}
+main section .container .row .col-xl-3 .icone {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: #f5f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+main section .container .row .col-xl-3 .icone i {
+  font-size: 70px;
+}
+main section .container .row .col-xl-3 .icone .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 122, 92, 0.7882352941);
+  position: absolute;
+  top: 53px;
+  right: 35px;
+  transition: 0.5s;
+}
+main section .container .row .col-xl-3 h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+main section .container .row .col-xl-3 h2 a {
+  color: #000000;
+  font-family: "Lora", serif;
+}
+main section .container .row .col-xl-3 p {
+  width: 84%;
+  margin: 0 auto;
+  font-family: "Roboto", Arial, sans-serif;
+  background: #fff;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+main section .container .row .col-xl-3:hover .icone {
+  background-color: #95adbe;
+}
+main section .container .row .col-xl-3:hover .icone .circle {
+  background-color: rgba(255, 255, 255, 0.855);
+  right: 55px;
+  z-index: 3;
+}
+
+footer {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+footer .color {
+  width: 100%;
+  height: 400px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .color .connectfooter {
+  width: 78%;
+}
+footer .color .connectfooter .a .b .boxs .connecttext h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer .color .connectfooter .a .b .boxs .connecttext h2 a {
+  color: white;
+  transition: 0.4s;
+  font-family: "Lora", serif;
+  font-weight: 500;
+}
+footer .color .connectfooter .a .b .boxs .connecttext h2 a:hover {
+  color: #95adbe;
+}
+footer .color .connectfooter .a .b .boxs .connecttext p {
+  color: rgba(255, 255, 255, 0.9019607843);
+  width: 86%;
+}
+footer .color .connectfooter .a .b .boxs .connecttext .logos {
+  display: flex;
+  gap: 10px;
+}
+footer .color .connectfooter .a .b .boxs .connecttext .logos .logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #95adbe;
+  border-radius: 50%;
+}
+footer .color .connectfooter .a .b .boxs .connecttext .logos .logo i {
+  color: white;
+}
+footer .color .connectfooter .a .b .boxs .extraul h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer .color .connectfooter .a .b .boxs .extraul h2 a {
+  color: white;
+  font-family: "Lora", serif;
+}
+footer .color .connectfooter .a .b .boxs .extraul ul li {
+  margin-bottom: 10px;
+}
+footer .color .connectfooter .a .b .boxs .extraul ul li a {
+  color: rgba(255, 255, 255, 0.9019607843);
+}
+footer .color .connectfooter .a .b .boxs .extraul ul li a i {
+  color: white;
+}
+footer .color .connectfooter .a .b .boxs .leqalul h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer .color .connectfooter .a .b .boxs .leqalul h2 a {
+  color: white;
+  font-family: "Lora", serif;
+}
+footer .color .connectfooter .a .b .boxs .leqalul ul li {
+  margin-bottom: 10px;
+}
+footer .color .connectfooter .a .b .boxs .leqalul ul li a {
+  color: rgba(255, 255, 255, 0.9019607843);
+}
+footer .color .connectfooter .a .b .boxs .leqalul ul li a i {
+  color: white;
+}
+footer .color .connectfooter .a .c .boxs .companyul h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer .color .connectfooter .a .c .boxs .companyul h2 a {
+  color: white;
+  font-family: "Lora", serif;
+}
+footer .color .connectfooter .a .c .boxs .companyul ul li {
+  margin-bottom: 10px;
+}
+footer .color .connectfooter .a .c .boxs .companyul ul li a {
+  color: rgba(255, 255, 255, 0.9019607843);
+}
+footer .color .connectfooter .a .c .boxs .companyul ul li a i {
+  color: white;
+}
+footer .color .connectfooter .a .c .boxs .questiontezt h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer .color .connectfooter .a .c .boxs .questiontezt h2 a {
+  color: white;
+  font-family: "Lora", serif;
+}
+footer .color .connectfooter .a .c .boxs .questiontezt .text i {
+  color: white;
+}
+footer .color .connectfooter .a .c .boxs .questiontezt .text p {
+  color: rgba(255, 255, 255, 0.9019607843);
+}
+footer .colorend {
+  width: 100%;
+  background-color: #000000;
+}
+footer .colorend .copyright {
+  width: 78%;
+  margin: 0 auto;
+  padding: 30px;
+  height: 125px;
+  display: flex;
+  align-items: center;
+}
+footer .colorend .copyright p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5019607843);
+}
+footer .colorend .copyright p span {
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+footer .colorend .copyright p span:hover {
+  color: #95adbe;
+}
+
+::-webkit-input-placeholder {
+  color: #4d4d4d;
+  font-weight: 400;
+  line-height: 1.5;
+}
